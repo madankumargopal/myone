@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class redBusClass1 {
 	
 	@Test(priority=1)
-	public void testCase1()
+	public void testCase1() throws Throwable
 	{		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Madankumar\\Desktop\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -23,9 +23,13 @@ public class redBusClass1 {
 			}
 			else
 			{
+				
+				Thread.sleep(1000);
 				i++;
 			}
 		}
+		
+		driver.manage().window().maximize();
 		
 		
 	}
