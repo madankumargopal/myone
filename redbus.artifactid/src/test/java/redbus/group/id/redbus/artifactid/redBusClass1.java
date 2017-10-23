@@ -19,18 +19,12 @@ public class redBusClass1 {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		for(int i=0;i<10;i++)
 		{
-			if (js.executeScript("return document.readyState").toString().equals("complete"))
-			{
-				break;
-			}
-			else
-			{
+			
 				
 				Thread.sleep(1000);
 				i++;
 				
-				//Added a comment
-			}
+			
 		}
 		
 		driver.manage().window().maximize();
