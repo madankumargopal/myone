@@ -29,6 +29,8 @@ public class redBusClass1Test {
 		
 		driver.manage().window().maximize();
 		
+		System.out.println("Making change to module1");
+		
 		
 	}
 
