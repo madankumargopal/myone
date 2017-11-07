@@ -1,5 +1,6 @@
 package redbus.group.id.redbus.artifactid;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,6 +31,8 @@ public class redBusClass1Test {
 		driver.manage().window().maximize();
 		
 		System.out.println("Making change to module1");
+		
+		Dimension windhand= driver.manage().window().getSize();
 		
 		
 	}
